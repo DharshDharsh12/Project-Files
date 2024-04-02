@@ -1,0 +1,680 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* -----------------------------------------------> PAGE 1 - CSS <--------------------------------------------------- */
+
+.page1 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-image: url("page1image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.img-shade {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-bars {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 2em;
+}
+
+.logo {
+  text-align: left;
+  position: absolute;
+  padding: 2em;
+}
+
+.fa-bars:focus+ul {
+  transform: translateX(-100%);
+}
+
+ul {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 9%;
+  padding: 0.5rem;
+  transform: translateX(100%);
+  transition: 1s;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+li {
+  padding: 0.5rem;
+  list-style: none;
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked+ul {
+  transform: translateX(0%);
+}
+
+.head {
+  /* color: white; */
+  text-align: center;
+  padding: 16px;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello {
+  padding: 16px;
+  font-size: 2.5em;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.span {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.name-dharshini {
+  font-size: 2rem;
+}
+
+.head-logo {
+  padding: 1rem;
+  margin: 0.2rem;
+  filter: invert(30%);
+  border-radius: 6px;
+}
+
+.head-logo-space {
+  padding: 2rem 0.7rem 0rem 0rem;
+  color: white;
+}
+
+i {
+  padding: 0.3em;
+  border-radius: 0.6rem;
+  font-size: 1.8em;
+}
+
+i:hover {
+  color: black;
+  background-color: white;
+}
+
+
+/* -----------------------------------------------> PAGE 2 - CSS <--------------------------------------------------- */
+
+.image {
+  margin: 1.5rem 0rem 3rem 0rem;
+  padding: 1.5rem;
+}
+
+.aboutme-cont {
+  display: flex;
+  flex-direction: column;
+  margin: -3rem 2rem 2rem 2rem;
+}
+
+.aboutme {
+  font-size: 1.3rem;
+}
+
+.me-byline {
+  font-size: 0.7rem;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.me-cont {
+  padding: 0rem 0rem 1.5rem 0rem;
+  text-align: justify;
+}
+
+.whiteborder {
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  border: 0.5px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6)inset;
+  border-radius: 6px;
+}
+
+.blackcolorcommunication {
+  /* display: none; */
+  width: 90%;
+  background-color: black;
+  border-radius: 6px;
+  padding: 3px;
+
+}
+
+.blackcolorprogram {
+  /* display: none; */
+  width: 70%;
+  background-color: black;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.blackcolorproblem {
+  /* display: none; */
+  width: 75%;
+  background-color: black;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.skills {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+}
+
+.end-cont {
+  border: 0.5px solid black;
+  border-radius: 6px;
+  width: 40%;
+  margin: 2rem 0rem 3rem 1.5rem;
+  padding: 0.5rem;
+}
+
+/* -----------------------------------------------> PAGE 3 - CSS <--------------------------------------------------- */
+
+.page3 {
+  background-color: #deddda;
+  padding-bottom: 3rem;
+}
+
+.page3-topic {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 1000;
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectwrapper {
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.6)inset;
+  width: 87%;
+  margin: 0rem 1.5rem 1rem 1.5rem;
+  position: relative;
+  border-radius: 6px;
+}
+
+.projectimg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  /* display: none; */
+}
+
+.projecthover {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2em;
+  color: white;
+  width: 94%;
+  height: 85%;
+  margin: auto;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* border: 2px solid grey; */
+  transform: scale(0);
+  transition: 0.4s;
+}
+
+.projectwrapper:hover .projecthover {
+  transform: scale(1);
+}
+
+.projectname {
+  flex-grow: 1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.project-icons {
+  font-size: 30%;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.fa {
+  color: white;
+}
+
+/* -----------------------------------------------> PAGE 4 - CSS <--------------------------------------------------- */
+
+.page4-topic {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 1000;
+  padding: 0rem 0rem 2rem 0rem;
+}
+
+.section-testmonial-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+  text-align: center;
+}
+
+.radioinput {
+  text-align: center;
+}
+
+.input-radio {
+  display: none;
+  bottom: 20px;
+  width: 20px;
+  left: 16px;
+  z-index: 2;
+}
+
+.img-testimonial {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.content {
+  /* padding: 16px; */
+  /* margin-bottom: 32px; */
+  text-align: justify;
+}
+
+.content-byline {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  transition: 0.4s;
+  width: 300%;
+  text-align: center;
+}
+
+.paginatiom {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: lightgray;
+  display: inline-block;
+}
+
+#radio1:checked~.pagination-wrapper .radio1 {
+  background-color: gray;
+}
+
+#radio2:checked~.pagination-wrapper .radio2 {
+  background-color: gray;
+}
+
+#radio3:checked~.pagination-wrapper .radio3 {
+  background-color: gray;
+}
+
+.pagination-wrapper {
+  padding-top: 0.5rem;
+}
+
+.page4 {
+  margin: 3rem 0rem 3rem 0rem;
+}
+
+.card {
+  flex-basis: 100%;
+}
+
+.input-radio:nth-child(2) {
+  left: 40px;
+}
+
+.input-radio:nth-child(3) {
+  left: 64px;
+}
+
+.input-radio:nth-child(2):checked~.cards {
+  transform: translate(-33.3%);
+}
+
+.input-radio:nth-child(3):checked~.cards {
+  transform: translate(-66.6%);
+}
+
+/* -----------------------------------------------> PAGE 5 - CSS <--------------------------------------------------- */
+
+.page5 {
+  background-color: #deddda;
+  margin-bottom: -5rem;
+}
+
+.page5-topic {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 1000;
+  padding: 3rem 0rem 2rem 0rem;
+}
+
+.contact-wrapper {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-image {
+  border: 0.5px solid #77767b;
+  background-color: #deddda;
+  padding: 5px;
+  border-radius: 50%;
+
+}
+
+.contact-header {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.contact-cont {
+  font-size: 0.6rem;
+  padding: 0rem 1rem;
+}
+
+.form-elements {
+  margin: 4rem 1.5rem 5rem 1.5rem;
+}
+
+input {
+  width: 95%;
+  border-radius: 6px;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  padding: 4px;
+  border: none
+}
+
+.msg-form {
+  padding: 7px 7px 100px 7px;
+}
+
+.form-button {
+  margin: 0.5rem 0rem 0rem 0rem;
+  padding-bottom: 5rem;
+}
+
+button {
+  padding: 0.3rem 2rem 0.3rem 2rem;
+  color: white;
+  background-color: black;
+  border-radius: 6px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* -----------------------------------------------> TABLET VIEW <--------------------------------------------------- */
+
+@media screen and (min-width: 481px) {
+  .menu-bar {
+    display: none;
+  }
+
+  ul {
+    flex-direction: row;
+    top: 0;
+    background-color: transparent;
+    transform: translate(0%);
+    margin-right: 1rem;
+  }
+
+  .logo {
+    padding: 2.5rem;
+  }
+
+  li {
+    padding: 2rem 0.4rem 1rem 0.4rem;
+  }
+
+  a {
+    color: white;
+  }
+
+  .Dharshini-photo {
+    width: 70%;
+    margin: 2rem 0rem 0rem 5.4rem;
+  }
+
+  .aboutme {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+  }
+
+  .me-byline {
+    font-size: 0.9rem;
+    padding: 0rem 0rem 1.3rem 0rem;
+  }
+
+  .end-cont {
+    margin: 2rem 0rem 5rem 1.5rem;
+    width: 20%;
+  }
+
+  .projectimg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projectwrapper {
+    flex-basis: 35%;
+  }
+
+  .contact-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-header {
+    font-size: 1rem;
+  }
+
+  .contact-header {
+    font-size: 0.8rem;
+  }
+
+  .page4 {
+    margin: 3rem 0rem 3rem 0rem;
+  }
+
+  .img-testimonial {
+    width: 150px;
+  }
+
+  .card {
+    /* width: 100%; */
+    text-align: center;
+    padding: 0rem 3rem 0rem 3rem;
+  }
+}
+
+/* -----------------------------------------------> LAPTOP VIEW <--------------------------------------------------- */
+
+@media screen and (min-width: 811px) {
+  .logo {
+    padding: 2rem 0rem 3rem 12rem;
+  }
+
+  li {
+    padding: 1.5rem;
+  }
+
+  ul {
+    margin-right: 10rem;
+  }
+
+  .name-dharshini {
+    font-size: 4rem;
+  }
+
+  .span {
+    font-size: 4.5rem;
+    font-weight: 10;
+  }
+
+  .hello {
+    padding: 16px;
+    font-size: 4rem;
+    font-weight: lighter;
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  .page2 {
+    margin-left: 7rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .me-cont {
+    padding: 0rem;
+  }
+
+  .page2-wholecont {
+    /* border: 2px solid red; */
+    margin-top: 7rem;
+    width: 70%;
+  }
+
+  .projectimg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projectwrapper {
+    flex-basis: 25%;
+  }
+
+  .cards {
+    width: 300%;
+    text-align: justify;
+    /* margin-left: 8rem; */
+  }
+
+  .contact-allwrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-wrapper {
+    padding: 1rem 0.5rem 0rem 0rem;
+    /* padding: 0; */
+  }
+
+  .form-elements {
+    width: 811px;
+  }
+
+  .page5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-wrap>div {
+    flex-basis: 49%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content>p {
+    max-width: 80%;
+    text-align: center;
+  }
+}
